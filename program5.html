@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bigger Image on Mouse Event</title>
+        <script type="text/javascript">
+           if(document.images){
+               var image1=new Image();
+               image1.src="pic5.jpg";
+           }
+        </script>
+    </head>
+    <body style="background-color: blueviolet;">
+        
+            <h2>Move your cursor to enlarge the image</h2>
+            <img id="image" src="pic5.jpg" onMouseOver="this.style.width='400px'" onMouseOut="this.style.width='200px'" alt="Img1"/> 
+            <br><br><br>
+            <button  onMouseOver="this.style.width='400px'" onMouseOut="this.style.width='100px'">Enlarge on MouseOver</button>
+        
+    </body>
+</html>
